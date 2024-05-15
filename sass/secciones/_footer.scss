@@ -1,0 +1,30 @@
+footer {
+    background-color: #ADAABF;
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+
+        .links-footer {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-size: 10px;
+                display: flex;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        .logo-footer {
+            img {
+                width: 100px;
+            }
+        }
+    }
+}

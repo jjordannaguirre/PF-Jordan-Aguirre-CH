@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* Paleta de colores
+#7E2E84 #D14081 #EF798A #F9F5E3 #CCF5AC */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #ADAABF;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #ADAABF;
+  }
+  body header .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  body header .nav .nav-list a {
+    font-size: 20px;
+    padding: 20px;
+  }
+  body footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer .container .links-footer a {
+    font-size: 15px;
+    display: flex;
+    padding: 15px;
+  }
+  body .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  body .cartas-package {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body #por-que-elegirnos p {
+    padding: 15px;
+  }
+}
+header {
+  background-color: #ADAABF;
+}
+header .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nav img {
+  width: 200px;
+  margin-top: 15px;
+}
+header .nav .nav-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+header .nav .nav-list a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+header .nav .btn {
+  padding: 10px;
+}
+header .nav button {
+  font-weight: 700;
+  color: #EBEFBF;
+  padding: 9px 15px;
+  background: #CEB5A7;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 78vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/img/banner-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero h1 {
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 2.5em;
+}
+
+#por-que-elegirnos {
+  background-color: #ADAABF;
+  color: #EBEFBF;
+  text-align: center;
+}
+#por-que-elegirnos .container {
+  padding: 40px 12px;
+  padding-bottom: 0;
+}
+#por-que-elegirnos h2 {
+  margin-top: 0;
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#por-que-elegirnos .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0px;
+  margin: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#por-que-elegirnos .carta h3 {
+  font-size: 1.5em;
+}
+#por-que-elegirnos .carta p {
+  padding: 15px;
+  max-width: 900px;
+}
+#por-que-elegirnos .carta button {
+  font-weight: 700;
+  padding: 9px 15px;
+  margin: 25px;
+  background: #CEB5A7;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#por-que-elegirnos .carta button a {
+  color: #EBEFBF;
+}
+#por-que-elegirnos .carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/img/experiencia-personal.jpg");
+}
+#por-que-elegirnos .carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/img/confianza.jpg");
+}
+#por-que-elegirnos .carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/img/beneficios.jpg");
+}
+
+footer {
+  background-color: #ADAABF;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .container .links-footer {
+  display: flex;
+  align-items: center;
+}
+footer .container .links-footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 10px;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+footer .container .logo-footer img {
+  width: 100px;
+}
+
+.social-media {
+  background-color: #ADAABF;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 35px;
+}
+
+.clientes-contacto-servicios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.clientes-contacto-servicios h3 {
+  font-size: 30px;
+}
+.clientes-contacto-servicios a {
+  font-size: 30px;
+}
+.clientes-contacto-servicios a:hover {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-serv {
+  background-color: #ADAABF;
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+.container-serv .titulo {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+}
+.container-serv .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+.container-serv .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5764705882);
+  border-radius: 5px;
+  background: #B8BACF;
+  text-align: center;
+  padding: 30px 20px;
+}
+.container-serv .box-container .box img {
+  height: 80px;
+}
+.container-serv .box-container .box h3 {
+  color: #444;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.container-serv .box-container .box p {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.container-serv .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  color: #EBEFBF;
+  background: #999AC6;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+.container-serv .box-container .box .btn:hover {
+  letter-spacing: 1px;
+}
+.container-serv .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+#hero-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 40vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-us-west-2.amazonaws.com/bfxpublicos/salesupblog/100005824710.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero-2 h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+}
+
+.contacto {
+  color: #ffffff;
+  background-color: #ADAABF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+}
+.contacto .text-contacto {
+  max-width: 600px;
+  padding: 30px;
+}
+.contacto .text-contacto h3 {
+  text-align: center;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+}
+.contacto .flex-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.contacto .flex-contacto h2 {
+  padding: 40px;
+  text-align: center;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+}
+.contacto .flex-contacto .bootstrap {
+  background-color: #ADAABF;
+  color: white;
+}
+
+#hero-sobre-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/img/hero-sobre-nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero-sobre-nosotros h1 {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+#hero-sobre-nosotros p {
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+}
+
+.cartas-package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-package {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card-package .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-package .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-package .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-package .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card-package .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-package .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card-package .back .link a {
+  color: #f3f3f3;
+}
+
+.card-package .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card-package .back p {
+  letter-spacing: 1px;
+}
+
+.card-package:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-package:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.clientes-contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px;
+  color: #EAF7CF;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.clientes-contacto h3 {
+  font-size: 30px;
+}
+.clientes-contacto a {
+  font-size: 30px;
+}
+.clientes-contacto a:hover {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+#hero-sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../resources/img/hero-sobre-nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 15px;
+        color: #EAF7CF;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        font-size: 50px;
+    }
+
+    p {
+        color: #EAF7CF;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        max-width: 900px;
+        padding: 20px;
+    }
+
+}
